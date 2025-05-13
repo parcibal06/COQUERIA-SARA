@@ -1,0 +1,330 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f4f4f4; }
+
+.texto {
+ font-size:50px;
+
+}
+.cobaeh{
+position:absolute;
+left:1150px;
+top:1100px;
+width:800px;
+height:50px;
+font-size:40px;
+font-align:center;
+}
+
+.boton{
+position:absolute;
+left:1350px;
+top:1200px;
+width:50px;
+height:50px;
+font-size:40px;
+
+}
+
+
+
+
+    /* Contenedor del carrusel */
+    .carousel-container {
+      position: relative;
+      width: 50%;
+      max-width: 600px;
+      margin: 50px auto;
+      perspective: 1000px;
+    }
+
+    /* Contenedor de las imágenes */
+    .carousel {
+      position: absolute;
+      width: 80%;
+      height: 400px;
+      transform-style: preserve-3d;
+      transform: rotateY(0deg);
+      animation: rotate 20s infinite linear;
+    }
+
+    /* Estilo de cada imagen */
+    .carousel img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Posicionamiento de las imágenes en el carrusel */
+    .carousel img:nth-child(1) { transform: rotateY(0deg) translateZ(500px); }
+    .carousel img:nth-child(2) { transform: rotateY(60deg) translateZ(500px); }
+    .carousel img:nth-child(3) { transform: rotateY(120deg) translateZ(500px); }
+    .carousel img:nth-child(4) { transform: rotateY(180deg) translateZ(500px); }
+    .carousel img:nth-child(5) { transform: rotateY(240deg) translateZ(500px); }
+    .carousel img:nth-child(6) { transform: rotateY(300deg) translateZ(500px); }
+
+    /* Animación de rotación */
+    @keyframes rotate {
+      0% { transform: rotateY(0deg); }
+      100% { transform: rotateY(360deg); }
+    }
+
+    /* Botón para redirigir */
+    .btn {
+      display: block;
+      width: 400px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+.centrar-imagen {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Barra flotante a la izquierda de la pantalla */
+    .barra-flotante {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 0 5px 5px 0;
+      z-index: 1000;
+    }
+
+    /* Estilo para cada icono */
+    .barra-flotante .icono {
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin: 5px 0;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .barra-flotante .icono i {
+      font-size: 20px;
+    }
+
+    /* Efecto hover */
+    .barra-flotante .icono:hover {
+      background-color: #555;
+      border-radius: 50%;
+      transform: scale(1.1);
+    }
+
+    /* Ocultar en pantallas pequeñas */
+    @media (max-width: 600px) {
+      .barra-flotante {
+        display: none;
+      }
+    }
+
+
+
+.banner-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: #18D9E1;
+            border: 1px solid #ccc;
+        }
+
+        .banner {
+            display: inline-block;
+            white-space: nowrap;
+            animation: moveBanner 10s linear infinite;
+        }
+
+        @keyframes moveBanner {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    article {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    .menu-flotante {
+      position: sticky;
+      top: 0;
+      background-color: #007BFF;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      z-index: 3;
+    }
+
+    .menu-flotante a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .menu-flotante a:hover {
+      text-decoration: underline;
+    }
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo del texto principal */
+main p {
+    margin: 20px;
+    font-size: 18px;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  width: 50%;
+  max-width: 200px;
+}
+
+.image-grid img {
+  width: 15%;
+  height:200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+    }
+
+    header {
+      background: url('https://source.unsplash.com/1600x400/?business,team') center/cover no-repeat;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+       }
+
+    /* Contenedor del texto */
+    .contenido {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    /* Animación de desvanecimiento */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      color: #2c3e50;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
